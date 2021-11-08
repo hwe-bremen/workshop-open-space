@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+}
+
+.space {
+    background-image: url("../pictures/space.png");
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.planet-area {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    width: 70%;
+    z-index: 1;
+}
+
+.planet {
+    height: 85%;
+    position: absolute;
+    bottom: -5px;
+    left: -10px;
+    z-index: 2;
+}
+
+.rocket {
+    position: relative;
+    height: 350px;
+    left: 570px;
+    top: 380px;
+    transform: rotate(25deg);
+    z-index: 1;
+}
+
+/*   PANEL     */
+
+.control-panel {
+    position: relative;
+    top: 40%;
+    padding: 25px;
+    right: 100px;
+    width: 30%;
+    height: 445px;
+    background-image: repeating-linear-gradient(45deg,
+                                                #ced92e 0%,
+                                                #ced92e 3%, black 3%,
+                                                black 6%, #ced92e 6%);
+    z-index: 2;
+}
+
+.control-panel__inner {
+    background-color: #0b0d2d;
+    padding: 30px 0;
+
+}
+
+.check-pass {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+input[type="password"] {
+    border: 3px solid #ced92e;
+    border-radius: 10px;
+    color: #0b2828;
+    left: 50px;
+    margin: 0 15px 0 70px;
+    width: 40%;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.button-check {
+    border: 3px solid #ced92e;
+    border-radius: 10px;
+    color: #0b2828;
+    background-color: #ced92e;
+    width: 20%;
+    font-size: 1rem;
+    padding: 0 15px;
+    line-height: 1.5rem;
+}
+
+input[type="checkbox"] {
+    height: 25px;
+    width: 25px;
+}
+
+.check-buttons {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 50px 20px 40px 10px;
+
+}
+
+.levers {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 90px 0 90px 0;
+}
+
+input[type="range"] {
+
+    transform: rotate(-90deg);
+    height: 20px;
+    width: 100px;
+
+}
+
+.button-launch {
+    border-radius: 50%;
+    background-color: red;
+    border: 2px solid white;
+    color: white;
+    height: 80px;
+    width: 80px;
+    display: block;
+    font-size: 1.2rem;
+    text-shadow: 2px 2px 4px darkslategray;
+    line-height: 2rem;
+    margin: 0 auto;
+}
+
+.launchReady {
+    background-color: lightseagreen;
+}
+
+.test {
+    background-color: red;
+}

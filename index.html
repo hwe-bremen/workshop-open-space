@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Open Space</title>
+    <link href="./assets/mystyle.css" rel="stylesheet">
+    <script src="./assets/myscript.js" async></script>
+</head>
+
+<body>
+    <div class="space">
+        <div class="planet-area">
+            <img src="./pictures/mars.png" class="planet" alt="Planet">
+            <img src="./pictures/rocket.png" class="rocket" alt="Rakete">
+        </div>
+
+        <div class="control-panel">
+            <div class="control-panel__inner">
+
+                <input type="password" placeholder="Bitte Passwort eingeben" value="" autocomplete="current-password" name="passwort">
+                <input type="button" id="buttonPass"  class="button-check" value="ok">
+
+
+                <div class="check-buttons">
+                    <input type="checkbox" id="checkOne">
+                    <input type="checkbox" name="checkTwo">
+                    <input type="checkbox" name="checkThree">
+                    <input type="checkbox" name="checkFour">
+                    <input type="checkbox" name="checkFive">
+                    <input type="checkbox" name="checkSix">
+                </div>
+
+                <div class="levers">
+                    <input type="range" id="vol-one" name="vol" min="0" max="50" >
+                    <input type="range" id="vol_two"  name="vol" min="0" max="50" >
+                    <input type="range" id="vol_three" name="vol" min="0" max="50" >
+                    <input type="range" id="vol_four" name="vol" min="0" max="50" >
+                    <input type="range" id="vol_five" name="vol" min="0" max="50" >
+                </div>
+
+                    <input type="button" class="button-launch" value="launch" >
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
